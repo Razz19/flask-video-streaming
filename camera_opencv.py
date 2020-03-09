@@ -19,8 +19,8 @@ class Camera(BaseCamera):
     @staticmethod
     def frames():
         camera = cv2.VideoCapture(Camera.video_source)
-        camera.set(cv2.CAP_PROP_FRAME_WIDTH, 160)
-        camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 120)
+        camera.set(cv2.CAP_PROP_FRAME_WIDTH, 500)
+        camera.set(cv2.CAP_PROP_FRAME_HEIGHT, 500)
 
         if not camera.isOpened():
             raise RuntimeError('Could not start camera.')
