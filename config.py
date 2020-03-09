@@ -1,0 +1,3 @@
+SECRET = "sgf#$VJIKs2df34vDV"
+USERNAME = "user"
+PASSWORD = "5f4dcc3b5aa765d61d8327deb882cf99"

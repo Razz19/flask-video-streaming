@@ -28,6 +28,6 @@ class Camera(BaseCamera):
         while True:
             # read current frame
             _, img = camera.read()
-            cv2.putText(img,str(datetime.now().strftime("%b %d %Y %H:%M:%S")),(10,20), cv2.FONT_HERSHEY_SIMPLEX, 0.7,(0,0,0),2,cv2.LINE_AA)
-            # encode as a jpeg image and return it
+            cv2.putText(img,str(datetime.now().strftime(
+                "%b %d %Y %H:%M:%S")),(10,20), cv2.FONT_HERSHEY_SIMPLEX, 0.7,(0,170,250),2,cv2.LINE_AA)            
             yield cv2.imencode('.jpg', img)[1].tobytes()
